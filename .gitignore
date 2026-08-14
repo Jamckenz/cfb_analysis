@@ -1,0 +1,30 @@
+# Generated output — regenerate any time with run_all.py / cfb_plots.py / cfb_report.py
+plots/
+*.pdf
+burn_card*.png
+
+# Your own logged data — personal, not something to publish/overwrite on pull
+# Comment these out if you WANT your season log tracked in git history
+# weekly_results.csv
+# vegas_lines.csv
+
+# CFBD API cache (regenerate with cfbd_fetch.py; also don't want to imply it's
+# checked-in "real" data since it depends on your own API key/fetch date)
+cfbd_efficiency_*.json
+cfbd_sample_record_*.json
+cfbd_backtest_cache/
+calibration.png
+
+# Team logo images (see README "Team logos" section) — excluded by default
+# since official team logos are trademarked; if you're using non-trademarked
+# images and want them versioned, comment this out
+logos/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+Thumbs.db
